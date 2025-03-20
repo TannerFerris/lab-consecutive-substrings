@@ -1,2 +1,22 @@
-Please add your pseudocode to this file
-And a written explanation of your solution
+There are two for loops with the variables 'i' for the outher loop and 'j' for the inner loop. The outer loop is used 
+for the starting position of the slice, and the j is used for the second position of the slice. 
+
+The input string is "abc". So the index positions are: "(a,0),(b,1),(c,2)"
+
+So as the first loop passes 'i' is set to 0, and j is set to '1' since it is "i + 1".
+
+the length of the input string ("abc") is 3.
+
+The first slice is "a" since it starts at i which is index 0 and end at j which is index 1.
+
+Second is "ab" with i = 0 and j = 2;
+
+Third is "abc" with i=0 and j = 3; It can reach 3 because the for condition is set to j <= string.length which is 3.
+
+The inner loop is finished and therefore the outerloop runs again starting at i = 1, which is the second position.
+
+The second position is "b". So you get "b", "bc", and then j is at 3.
+
+The outer loop runs a third time which reaches its max since it is set to i < string.length.
+
+The inner loop starts at "c" since i = 2 and there are no consecutive letters so the loop is finished. 
