@@ -20,3 +20,5 @@ The second position is "b". So you get "b", "bc", and then j is at 3.
 The outer loop runs a third time which reaches its max since it is set to i < string.length.
 
 The inner loop starts at "c" since i = 2 and there are no consecutive letters so the loop is finished. 
+
+Time complexity: O(n)
